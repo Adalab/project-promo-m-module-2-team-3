@@ -1,0 +1,25 @@
+.card_background {
+  background: $cardBackground;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .card {
+    background-color: $whiteColor;
+    max-width: 240px;
+    &_info {
+      &--name {
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+    &_photo {
+      height: 200px;
+      background-color: lightgray;
+    }
+    &_media {
+    }
+    &_button {
+    }
+  }
+}

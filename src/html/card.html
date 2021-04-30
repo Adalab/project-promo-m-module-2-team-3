@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile cards</title>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Monserrat Font + Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="page">
+      <include src="./partials/header.html"></include>
+      <main class="main">
+          <section class="card_background">
+            <input class="card_button" type="submit" value="Reset">
+              <section class="card">
+                  <section class="card_info">
+                      <h2 class="card_info--name">Nombre Apellido</h2>
+                      <h3 class="card_info--job">Front-end developer</h3>
+                  </section>
+                  <section class="card_photo"></section>
+                  <ul class="card_media">
+                      <li><a href="#" class="card_media--item" title="phone-icon"></a></li>
+                      <li><a href="#" class="card_media--item" title="mail-icon"></a></li>
+                      <li><a href="#" class="card_media--item" title="linkedin-icon"></a></li>
+                      <li><a href="#" class="card_media--item" title="github-icon"></a></li>
+                  </ul>
+              </section>
+          </section>
+      </main>
+      <include src="./partials/footer.html"></include>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
