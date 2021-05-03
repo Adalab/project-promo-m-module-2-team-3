@@ -1,1 +1,18 @@
+.landing_background {
+  background-color: $landingBackground;
+  width: 320px;
+  height: 458px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.landing_logo_container {
+  width: 250px;
+
+  .logo_card {
+    width: 100%;
+  }
+}
