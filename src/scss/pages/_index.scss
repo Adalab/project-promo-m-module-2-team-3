@@ -11,8 +11,33 @@
 
 .landing_logo_container {
   width: 250px;
+}
 
-  .logo_card {
-    width: 100%;
+.logo_card {
+  width: 100%;
+}
+
+.landing {
+  padding: 35px 43.3px 17.8px 47.7px;
+  text-align: center;
+  &_info--create {
+    width: 223px;
+    height: 24px;
+    font-family: $landingFont;
+    color: $thirdFontcolor;
+    font-size: 19.2px;
   }
+  &_info--better {
+    font-family: $secondFont;
+    color: $mainFontColor;
+    font-size: 12.8px;
+  }
+}
+.landing-list {
+  width: 268px;
+  height: 73.8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  outline: $thirdFontcolor solid 1.6px;
 }
