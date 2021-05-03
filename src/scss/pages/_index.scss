@@ -33,11 +33,23 @@
     font-size: 12.8px;
   }
 }
-.landing-list {
+.landing_list {
   width: 268px;
   height: 73.8px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  outline: $thirdFontcolor solid 1.6px;
+  justify-content: space-between;
+  padding-bottom: 38.6px;
+}
+
+.landing_list--button {
+  width: 129px;
+  height: 42px;
+  background-color: $borderCardColor;
+  color: $whiteColor;
+  font-family: $secondFont;
+  border-radius: 21px;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  top: 40px;
 }
