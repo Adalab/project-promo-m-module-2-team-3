@@ -4,7 +4,6 @@
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   .card {
     background-color: $whiteColor;
@@ -52,7 +51,10 @@
       }
     }
     &_button {
-      margin-bottom: 20px;
+      &_container {
+        padding-bottom: 20px;
+        width: 240px;
+      }
       background-color: rgba($color: #000000, $alpha: 0);
       font-family: $secondFont;
       font-size: 12px;
