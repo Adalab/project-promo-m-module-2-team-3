@@ -1,5 +1,7 @@
 .main_card {
-  background: linear-gradient(to bottom, $landingBackground, $highlightcolor);
+  &--background {
+    background: linear-gradient(to bottom, $landingBackground, $highlightcolor);
+  }
   @media all and (min-width: 768px) {
     width: 100%;
     display: flex;
@@ -15,6 +17,8 @@
     }
   }
   @media all and (min-width: 1024px) {
+    width: 1024px;
+    margin: 0 auto;
     &--fill {
       width: 33%;
     }
