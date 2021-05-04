@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   border-top: 1px solid grey;
-  background-color: #ffffff;
+  background-color: $highlightcolor;
 }
 
 .footeryear {
@@ -32,6 +32,7 @@
     height: 60px;
   }
   .footeryear {
+    font-size: 14px;
     padding: 10px;
     margin: 10px 386px 12px 41px;
     order: 1;
