@@ -42,12 +42,18 @@ input {
 }
 
 .button_image {
-  background-color: $highlightcolor;
+  background-color: $thirdFontcolor;
   color: $whiteColor;
   width: 140px;
   height: 30px;
   margin-right: 20px;
   border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: $boxShadow;
 }
 
 .checkbox {
@@ -55,4 +61,13 @@ input {
   border: solid 2px $detailColor;
   width: 30px;
   height: 30px;
+}
+
+.icon {
+  font-size: 18px;
+  color: $thirdFontcolor;
+}
+
+.icon-keyboard {
+  width: 100%;
 }
