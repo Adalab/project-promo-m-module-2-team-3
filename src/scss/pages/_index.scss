@@ -1,4 +1,4 @@
-.landing_background {
+.landing {
   background-color: $landingBackground;
   width: 100%;
   height: 80vh;
@@ -7,32 +7,33 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
 
-.landing_logo_container {
-  width: 250px;
-}
+  &_logo {
+    width: 250px;
 
-.logo_card {
-  width: 100%;
-}
-
-.landing {
-  padding: 35px 43.3px 17.8px 47.7px;
-  text-align: center;
-  &_info--create {
-    width: 223px;
-    height: 24px;
-    font-family: $landingFont;
-    color: $thirdFontcolor;
-    font-size: 19.2px;
+    &--card {
+      width: 100%;
+    }
   }
-  &_info--better {
-    font-family: $secondFont;
-    color: $mainFontColor;
-    font-size: 12.8px;
+  &_info {
+    padding: 35px 43.3px 17.8px 47.7px;
+    text-align: center;
+
+    &--create {
+      width: 223px;
+      height: 24px;
+      font-family: $landingFont;
+      color: $thirdFontcolor;
+      font-size: 19.2px;
+    }
+    &--better {
+      font-family: $secondFont;
+      color: $mainFontColor;
+      font-size: 12.8px;
+    }
   }
 }
+
 .landing_list {
   width: 268px;
   height: 73.8px;
@@ -42,14 +43,34 @@
   align-items: center;
   border: 1.6px solid rgba(225, 115, 52, 0.21);
   margin-bottom: 38.6px;
-}
 
-.landing_list--button {
-  width: 129px;
-  height: 42px;
-  background-color: $borderCardColor;
-  color: $whiteColor;
-  font-family: $secondFont;
-  border-radius: 21px;
-  padding: 10px 20px 10px 20px;
+  &--article--text {
+    color: $secondFontColor;
+    font-family: $secondFont;
+    font-size: 12.8px;
+    padding-bottom: 10px;
+  }
+
+  &--article--icon {
+    color: $thirdFontcolor;
+    width: 61.1px;
+    height: 26px;
+  }
+
+  &--article--icon2 {
+    color: $thirdFontcolor;
+    position: relative;
+    right: 45%;
+    bottom: 10%;
+  }
+
+  &--button {
+    width: 129px;
+    height: 42px;
+    background-color: $borderCardColor;
+    color: $whiteColor;
+    font-family: $secondFont;
+    border-radius: 21px;
+    padding: 10px 20px 10px 20px;
+  }
 }
