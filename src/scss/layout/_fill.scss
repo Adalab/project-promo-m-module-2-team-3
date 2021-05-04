@@ -3,9 +3,24 @@
   font-family: $secondFont;
   font-size: 14px;
   color: $mainFontColor;
-
   width: 100%;
 }
+
+.icon {
+  font-size: 18px;
+  color: $thirdFontcolor;
+}
+
+.icon-keyboard {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.fill_icon {
+  display: flex;
+  flex-direction: row;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -61,13 +76,4 @@ input {
   border: solid 2px $detailColor;
   width: 30px;
   height: 30px;
-}
-
-.icon {
-  font-size: 18px;
-  color: $thirdFontcolor;
-}
-
-.icon-keyboard {
-  width: 100%;
 }
