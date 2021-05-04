@@ -32,54 +32,15 @@
   <body>
     <include src="./partials/header.html"></include>
 
-    <main class="main">
-      <section class="card_background">
-        <div class="card_button_container">
-          <a href="#" class="card_button" title="reset-button">
-            <i class="fa fa-trash" aria-hidden="true"></i>Reset
-          </a>
-        </div>
-        <section class="card">
-          <section class="card_info">
-            <h2 class="card_info--name">Nombre Apellido</h2>
-            <h3 class="card_info--job">Front-end developer</h3>
-          </section>
-          <section class="card_photo"></section>
-          <ul class="card_media">
-            <li>
-              <a href="#" title="phone-icon"
-                ><i class="fa fa-phone card_media--item" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" title="mail-icon"
-                ><i
-                  class="fa fa-envelope card_media--item"
-                  aria-hidden="true"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" title="linkedin-icon"
-                ><i
-                  class="fab fa-linkedin card_media--item"
-                  aria-hidden="true"
-                ></i
-              ></a>
-            </li>
-            <li>
-              <a href="#" title="github-icon"
-                ><i
-                  class="fab fa-github card_media--item"
-                  aria-hidden="true"
-                ></i
-              ></a>
-            </li>
-          </ul>
-        </section>
-      </section>
+    <main class="main_card">
 
-      <include src="./partials/fill.html"></include>
+      <div class="main_card--preview">
+        <include src="./partials/card-preview.html"></include>
+      </div>
+
+      <div class="main_card--fill">
+        <include src="./partials/fill.html"></include>
+      </div>
     </main>
 
     <include src="./partials/footer.html"></include>

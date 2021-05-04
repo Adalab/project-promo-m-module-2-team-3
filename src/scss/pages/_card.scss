@@ -1,71 +1,26 @@
-.card_background {
-  background: $cardBackground;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .card {
-    background-color: $whiteColor;
-    width: 240px;
-    border-radius: 2px;
-    box-shadow: $boxShadow;
-    &_info {
-      padding-left: 24px;
-      margin-top: 21px;
-      margin-bottom: 10px;
-      border-left: $borderCardColor 5px solid;
-      &--name {
-        font-family: "Montserrat", sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-        padding-bottom: 4px;
-        color: $mainFontColor;
-      }
-      &--job {
-        font-family: "Montserrat", sans-serif;
-        font-size: 16px;
-        color: $secondFontColor;
-      }
+.main_card {
+  background: linear-gradient(to bottom, $landingBackground, $highlightcolor);
+  @media all and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    height: 80vh;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &--preview {
+      padding: 20px 40px 20px 15px;
+      width: 50%;
     }
-    &_photo {
-      height: 200px;
-      background-color: lightgray;
+    &--fill {
+      width: 50%;
     }
-    &_media {
-      padding-top: 10px;
-      padding-bottom: 12px;
-      padding-left: 24px;
-      display: flex;
-      align-items: center;
-      &--item {
-        height: 32px;
-        width: 32px;
-        border-radius: 50%;
-        border: 1px $detailColor solid;
-        color: $mainFontColor;
-        font-size: 18px;
-        line-height: 32px;
-        text-align: center;
-        margin-right: 10px;
-      }
+  }
+  @media all and (min-width: 1024px) {
+    &--fill {
+      width: 33%;
     }
-    &_button {
-      &_container {
-        padding-bottom: 20px;
-        width: 240px;
-      }
-      background-color: rgba($color: #000000, $alpha: 0);
-      font-family: $secondFont;
-      font-size: 12px;
-      text-transform: uppercase;
-      border: 1px $whiteColor solid;
-      color: $secondFontColor;
-      padding: 6px 12px;
-      border-radius: 20px;
-      .fa {
-        padding-right: 8px;
-      }
+    &--preview {
+      padding: 20px 40px 20px 15px;
+      width: 67%;
     }
   }
 }
