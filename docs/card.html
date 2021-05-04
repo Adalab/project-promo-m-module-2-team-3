@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Awesome profile cards</title>
+
+    <!-- Fontawesome -->
+    <!--<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Monserrat Font + Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="title">Awesome profile cards</h1>
+      <div class="imagecontainer">
+        <img
+          class="logo"
+          src="./assets/images/logo-awesome-profile-cards.svg"
+          alt="Logo"
+          title="Awesome profile cards"
+        />
+      </div>
+    </header>
+
+
+    <main class="main_card--background">
+      <div class="main_card">
+        <div class="main_card--preview">
+          <section class="card_background">
+              <div class="card_button_container">
+                <a href="#" class="card_button" title="reset-button">
+                  <i class="far fa-trash-alt" aria-hidden="true"></i>Reset
+                </a>
+              </div>
+              <section class="card">
+                <section class="card_info">
+                  <h2 class="card_info--name">Nombre Apellido</h2>
+                  <h3 class="card_info--job">Front-end developer</h3>
+                </section>
+                <section class="card_photo"></section>
+                <ul class="card_media">
+                  <li>
+                    <a href="#" title="phone-icon"
+                      ><i class="fas fa-mobile-alt card_media--item" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" title="mail-icon"
+                      ><i
+                        class="fa fa-envelope card_media--item"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" title="linkedin-icon"
+                      ><i
+                        class="fab fa-linkedin-in card_media--item"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" title="github-icon"
+                      ><i
+                        class="fab fa-github-alt card_media--item"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </section>
+            </section>
+        </div>
+
+        <div class="main_card--fill">
+          <section class="fill">
+            <div class="icon">
+              <i class="far fa-keyboard icon-keyboard" aria-hidden="true"></i>
+            </div>
+            <h2 class="title_fill">rellena</h2>
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/mbjpqobw"
+              method="POST"
+            >
+              <label>Nombre completo</label>
+              <input
+                id="fullName"
+                type="text"
+                name="fullName"
+                placeholder="Ej:Sally Jill"
+              />
+              <label>Puesto</label>
+              <input id="rol" type="text" name="rol" placeholder="Ej:Front-End unicorn" />
+              <label> Imagen de perfil </label>
+              <div class="add_image">
+                <div class="button_image">Añadir imagen</div>
+                <div class="checkbox"></div>
+              </div>
+              <label>Email</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="Ej:sally-jill@gmail.com"
+              />
+              <label>Telefono</label>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="Ej:555-55-55-55"
+              />
+              <label>Linkedin </label>
+              <input
+                id="Linkedin"
+                type="text"
+                name="Linkedin"
+                placeholder="Ej:linkedin.com/in/sally.hill"
+              />
+              <label> Github</label>
+              <input id="Github" type="text" name="Github" placeholder="Ej:@sally-hill" />
+            </form>
+          </section>
+
+        </div>
+     </div>
+    </main>
+
+    <footer class="footer">
+      <small class="footeryear"> Awesome profile-cards @2021</small>
+
+      <img class="footerimage" src="./assets/images/logo-adalab.png" />
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
