@@ -17,7 +17,9 @@
   }
   &_info {
     padding: 35px 43.3px 17.8px 47.7px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &--create {
       width: 223px;
@@ -39,7 +41,7 @@
   height: 73.8px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   border: 1.6px solid rgba(225, 115, 52, 0.21);
   margin-bottom: 38.6px;
@@ -48,20 +50,11 @@
     color: $secondFontColor;
     font-family: $secondFont;
     font-size: 12.8px;
-    padding-bottom: 10px;
   }
 
   &--article--icon {
     color: $thirdFontcolor;
-    width: 61.1px;
-    height: 26px;
-  }
-
-  &--article--icon2 {
-    color: $thirdFontcolor;
-    position: relative;
-    right: 45%;
-    bottom: 10%;
+    font-size: 22.4px;
   }
 
   &--button {
