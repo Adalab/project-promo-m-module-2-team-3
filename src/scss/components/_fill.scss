@@ -2,10 +2,24 @@
   font-family: $secondFont;
   font-size: 14px;
   color: $mainFontColor;
-  width: 100%;
 }
 
-.icon {
+.fill_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fill_arrow {
+  @include collapsableImage();
+}
+
+.fill_flex1 {
+  display: flex;
+}
+
+.far {
   font-size: 18px;
   color: $thirdFontcolor;
 }
@@ -39,7 +53,7 @@ input {
 }
 
 ::-webkit-input-placeholder {
-  color: $detailColor;
+  color: $placeholderColor;
 }
 
 .title_fill {
