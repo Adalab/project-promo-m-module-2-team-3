@@ -1,17 +1,35 @@
 .share {
+  display: flex;
   background-color: #ffffff;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  justify-content: center;
+  align-items: center;
 }
 
-.title_share {
+.sharewrapper {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.shareicon {
+  display: inline;
+  font-size: 18px;
+  color: $thirdFontcolor;
+  margin-top: 16px;
+}
+
+.sharetitle {
   font-size: 18px;
   font-family: $secondFont;
   color: $secondFontColor;
   text-transform: uppercase;
+  margin: 14px 255px 14px 10px;
 }
 
-.icon3 {
+.sharearrow {
   font-size: 18px;
-  color: $thirdFontcolor;
+  margin-top: 16px;
+  justify-content: space-between;
+  color: #54585a;
 }
