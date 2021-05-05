@@ -3,6 +3,16 @@
   font-size: 14px;
   color: $secondFontColor;
 
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &_arrow {
+    @include collapsableImage();
+  }
+
   &_icon {
     font-size: 18px;
     color: $thirdFontcolor;

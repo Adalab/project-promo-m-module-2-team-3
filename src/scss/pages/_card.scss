@@ -1,9 +1,14 @@
+.hidden {
+  display: none;
+}
+
 .main_card {
   &--background {
     background: linear-gradient(to bottom, $landingBackground, $highlightcolor);
   }
   &--fill {
     padding: 0 19px;
+    margin-top: 27px;
   }
   @media all and (min-width: 768px) {
     width: 100%;
@@ -16,6 +21,7 @@
       width: 50%;
     }
     &--fill {
+      margin-top: 0px;
       padding: 20px 15px 20px 40px;
       width: 50%;
     }
