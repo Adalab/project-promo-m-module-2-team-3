@@ -2,6 +2,9 @@
   &--background {
     background: linear-gradient(to bottom, $landingBackground, $highlightcolor);
   }
+  &--fill {
+    padding: 0 19px;
+  }
   @media all and (min-width: 768px) {
     width: 100%;
     display: flex;
@@ -13,6 +16,7 @@
       width: 50%;
     }
     &--fill {
+      padding: 20px 15px 20px 40px;
       width: 50%;
     }
   }
@@ -20,6 +24,7 @@
     width: 1024px;
     margin: 0 auto;
     &--fill {
+      padding: 20px 15px 20px 40px;
       width: 33%;
     }
     &--preview {
