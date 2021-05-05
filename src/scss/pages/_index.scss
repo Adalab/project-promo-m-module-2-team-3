@@ -7,9 +7,16 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  @media all and (min-width: 768px) {
+    height: 963px;
+    justify-content: flex-end;
+  }
 
   &_logo {
     width: 250px;
+    @media all and (min-width: 768px) {
+      width: 419px;
+    }
 
     &--card {
       width: 100%;
@@ -20,6 +27,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media all and (min-width: 768px) {
+    }
 
     &--create {
       width: 223px;
@@ -27,11 +36,21 @@
       font-family: $landingFont;
       color: $thirdFontcolor;
       font-size: 19.2px;
+      @media all and (min-width: 768px) {
+        font-size: 24px;
+        width: 278px;
+        height: 31px;
+      }
     }
     &--better {
       font-family: $secondFont;
       color: $mainFontColor;
       font-size: 12.8px;
+      @media all and (min-width: 768px) {
+        font-size: 16px;
+        width: 331px;
+        height: 48px;
+      }
     }
   }
 }
@@ -45,6 +64,10 @@
   align-items: center;
   border: 1.6px solid rgba(225, 115, 52, 0.21);
   margin-bottom: 38.6px;
+  @media all and (min-width: 768px) {
+    width: 325px;
+    height: 86px;
+  }
 
   &--article--text {
     color: $secondFontColor;
@@ -55,15 +78,25 @@
   &--article--icon {
     color: $thirdFontcolor;
     font-size: 22.4px;
+    @media all and (min-width: 768px) {
+      font-size: 28px;
+    }
   }
 
   &--button {
     width: 129px;
     height: 42px;
     background-color: $borderCardColor;
-    color: $whiteColor;
     font-family: $secondFont;
     border-radius: 21px;
     padding: 10px 20px 10px 20px;
+    @media all and (min-width: 768px) {
+      margin-top: 186px;
+      margin-bottom: 59px;
+    }
+
+    &--get--started {
+      color: $whiteColor;
+    }
   }
 }
