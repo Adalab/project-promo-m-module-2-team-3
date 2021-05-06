@@ -3,20 +3,22 @@
   background-color: #ffffff;
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .sharewrapper {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   height: 50px;
 }
 .shareicon {
   display: inline;
   font-size: 18px;
   color: $thirdFontcolor;
-  margin-top: 16px;
+  margin-right: 10px;
 }
 
 .sharetitle {
@@ -24,12 +26,10 @@
   font-family: $secondFont;
   color: $secondFontColor;
   text-transform: uppercase;
-  margin: 14px 255px 14px 10px;
+  /*margin: 14px 255px 14px 10px;*/
 }
 
 .sharearrow {
   font-size: 18px;
-  margin-top: 16px;
-  justify-content: space-between;
   color: #54585a;
 }
