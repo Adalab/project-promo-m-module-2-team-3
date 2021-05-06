@@ -5,7 +5,7 @@
   height: 110px;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid grey;
+  border-top: $mainBorder;
   background-color: $highlightcolor;
 }
 
@@ -13,7 +13,7 @@
   margin: 18px 0 12px;
   line-height: 20px;
   font-size: 14px;
-  font-family: OpenSans;
+  font-family: $secondFont;
   color: #6b6b6b;
   opacity: 50%;
 }
