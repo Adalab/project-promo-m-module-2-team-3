@@ -20,19 +20,11 @@
   display: flex;
 }
 
-.far {
-  font-size: 18px;
-  color: $thirdFontcolor;
-}
-
 .icon-keyboard {
   width: 100%;
   margin-right: 10px;
-}
-
-.fill_icon {
-  display: flex;
-  flex-direction: row;
+  font-size: 18px;
+  color: $thirdFontcolor;
 }
 
 .contact-form {
