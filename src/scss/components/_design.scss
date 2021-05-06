@@ -2,6 +2,7 @@
   font-family: $secondFont;
   font-size: 14px;
   color: $secondFontColor;
+  border-bottom: $mainBorder;
 
   &_wrapper {
     display: flex;
