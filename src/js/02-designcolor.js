@@ -1,4 +1,3 @@
-
 const button1 = document.querySelector('.js-input1')
 const button2 = document.querySelector('.js-input2')
 const button3 = document.querySelector('.js-input3')

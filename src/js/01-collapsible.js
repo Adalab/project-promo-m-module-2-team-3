@@ -60,3 +60,13 @@ function collapsibleShare () {
 }
 arrowUpShare.addEventListener ('click', collapsibleShare);
 arrowDownShare.addEventListener ('click', collapsibleShare);
+
+
+//create card button
+
+const cardLink = document.querySelector ('.js-cardCreationLink');
+const creationBtn = document.querySelector ('.sharecard');
+function createCard () {
+  cardLink.classList.toggle ('hidden');
+}
+creationBtn.addEventListener ('click', createCard);
