@@ -1,3 +1,4 @@
+//SHARE - CREAR TARJETA
 .share {
   display: flex;
   background-color: #ffffff;
@@ -47,3 +48,52 @@
   font-family: $secondFont;
   background-color: $thirdFontcolor;
 }
+
+//SHARE - TWITTER
+.cardCreated {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 136px;
+  font-family: $secondFont;
+}
+
+.cardCreated-title {
+  color: $secondFontColor;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.CardCreated-a {
+  color: $thirdFontcolor;
+  font-size: 14px;
+  text-align: center;
+}
+
+.CardCreated_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a0f5;
+  width: 181px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: $boxShadow;
+  font-size: 14px;
+  color: $whiteColor;
+  margin-top: 10px;
+}
+.icon {
+  font-size: 18px;
+  color: $whiteColor;
+  margin-right: 9.5px;
+}
+.twShare {
+  width: 134px;
+  height: 20px;
+}
+
