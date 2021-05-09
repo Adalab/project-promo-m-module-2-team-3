@@ -1,55 +1,71 @@
-<section class="fill">
+<section class="fill js-fill">
   <div class="fill_wrapper">
     <div class="fill_flex1">
       <i class="far fa-keyboard icon-keyboard"></i>
       <h2 class="title_fill">rellena</h2>
     </div>
     <div>
-      <i class="fas fa-chevron-down fill_arrow"></i>
-      <i class="fas fa-chevron-up fill_arrow hidden"></i>
+      <i class="fas fa-chevron-down fill_arrow js-arrowDown hidden"></i>
+      <i class="fas fa-chevron-up fill_arrow js-arrowUp"></i>
     </div>
   </div>
+
   <form
-    class="contact-form"
+    class="contact-form js-collapsibleContainer hidden"
     action="https://formspree.io/f/mbjpqobw"
     method="POST"
-  >
-    <label>Nombre completo</label>
+    >
+    <label class="label_fill">Nombre completo</label>
     <input
+      class="input"
       id="fullName"
       type="text"
       name="fullName"
       placeholder="Ej:Sally Jill"
     />
-    <label>Puesto</label>
-    <input id="rol" type="text" name="rol" placeholder="Ej:Front-End unicorn" />
-    <label> Imagen de perfil </label>
+    <label class="label_fill">Puesto</label>
+    <input 
+      class="input"
+      id="rol" 
+      type="text" 
+      name="rol" 
+      placeholder="Ej:Front-End unicorn" />
+    <label class="label_fill"> Imagen de perfil </label>
     <div class="add_image">
       <div class="button_image">Añadir imagen</div>
       <div class="checkbox"></div>
     </div>
-    <label>Email</label>
+    <label class="label_fill">Email</label>
     <input
+      class="input"
       type="email"
       id="emailAddress"
       name="emailAddress"
       placeholder="Ej:sally-jill@gmail.com"
     />
-    <label>Telefono</label>
+    <label class="label_fill">Telefono</label>
     <input
+      class="input"
       type="tel"
       id="telephone"
       name="telephone"
       placeholder="Ej:555-55-55-55"
     />
-    <label>Linkedin </label>
+    <label class="label_fill">Linkedin </label>
     <input
+      class="input"
       id="Linkedin"
       type="text"
       name="Linkedin"
       placeholder="Ej:linkedin.com/in/sally.hill"
     />
-    <label> Github</label>
-    <input id="Github" type="text" name="Github" placeholder="Ej:@sally-hill" />
+    <label class="label_fill"> Github</label>
+    <input
+      class="input"
+      id="Github"
+      type="text"
+      name="Github"
+      placeholder="Ej:@sally-hill"
+    />
   </form>
 </section>

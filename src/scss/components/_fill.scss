@@ -39,13 +39,14 @@ label {
   margin-bottom: 5px;
 }
 
-input {
+.input {
   border: solid 1px $detailColor;
   height: 30px;
   margin-bottom: 20px;
 }
 
-::-webkit-input-placeholder {
+input::placeholder {
+  padding-left: 10px;
   color: $placeholderColor;
 }
 

@@ -92,62 +92,169 @@
               </section>
             </section>
         </div>
-
+        
         <div class="main_card--fill">
-          <section class="fill">
-            <div class="icon">
-              <i class="far fa-keyboard icon-keyboard" aria-hidden="true"></i>
+          <section class="design">
+            <div class="design_wrapper">
+              <div>
+                <i class="fal fa-object-ungroup design_icon"></i>
+                <h2 class="design_title">diseña</h2>
+              </div>
+              <div>
+                <i class="fas fa-chevron-down design_arrow"></i>
+                <i class="fas fa-chevron-up design_arrow hidden"></i>
+              </div>
             </div>
-            <h2 class="title_fill">rellena</h2>
+
+            <form class="design_form">
+              <p class="design_form-title">colores</p>
+              <div class="design_form-box">
+                <label class="design_form-label">
+                  <input
+                    class="design_form-label--input"
+                    type="radio"
+                    name="color"
+                    value="green"
+                  />
+                  <div class="design_form-label--div">
+                    <div class="design_form-label--div1"></div>
+                    <div class="design_form-label--div2"></div>
+                    <div class="design_form-label--div3"></div>
+                  </div>
+                </label>
+
+                <label class="design_form-label">
+                  <input
+                    class="design_form-label--input"
+                    type="radio"
+                    name="color"
+                    value="orange"
+                  />
+                  <div class="design_form-label--div">
+                    <div class="design_form-label--div4"></div>
+                    <div class="design_form-label--div5"></div>
+                    <div class="design_form-label--div6"></div>
+                  </div>
+                </label>
+                <label class="design_form-label">
+                  <input
+                    class="design_form-label--input"
+                    type="radio"
+                    name="color"
+                    value="blue"
+                  />
+                  <div class="design_form-label--div">
+                    <div class="design_form-label--div7"></div>
+                    <div class="design_form-label--div8"></div>
+                    <div class="design_form-label--div9"></div>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </section>
+
+          <section class="fill">
+            <div class="fill_wrapper">
+              <div class="fill_flex1">
+                <i class="far fa-keyboard icon-keyboard"></i>
+                <h2 class="title_fill">rellena</h2>
+              </div>
+              <div>
+                <i class="fas fa-chevron-down fill_arrow"></i>
+                <i class="fas fa-chevron-up fill_arrow hidden"></i>
+              </div>
+            </div>
             <form
               class="contact-form"
               action="https://formspree.io/f/mbjpqobw"
               method="POST"
             >
-              <label>Nombre completo</label>
+              <label class="label_fill">Nombre completo</label>
               <input
                 id="fullName"
                 type="text"
                 name="fullName"
                 placeholder="Ej:Sally Jill"
               />
-              <label>Puesto</label>
+              <label class="label_fill">Puesto</label>
               <input id="rol" type="text" name="rol" placeholder="Ej:Front-End unicorn" />
-              <label> Imagen de perfil </label>
+              <label class="label_fill"> Imagen de perfil </label>
               <div class="add_image">
                 <div class="button_image">Añadir imagen</div>
                 <div class="checkbox"></div>
               </div>
-              <label>Email</label>
+              <label class="label_fill">Email</label>
               <input
+                class="input"
                 type="email"
                 id="emailAddress"
                 name="emailAddress"
                 placeholder="Ej:sally-jill@gmail.com"
               />
-              <label>Telefono</label>
+              <label class="label_fill">Telefono</label>
               <input
+                class="input"
                 type="tel"
                 id="telephone"
                 name="telephone"
                 placeholder="Ej:555-55-55-55"
               />
-              <label>Linkedin </label>
+              <label class="label_fill">Linkedin </label>
               <input
+                class="input"
                 id="Linkedin"
                 type="text"
                 name="Linkedin"
                 placeholder="Ej:linkedin.com/in/sally.hill"
               />
-              <label> Github</label>
-              <input id="Github" type="text" name="Github" placeholder="Ej:@sally-hill" />
+              <label class="label_fill"> Github</label>
+              <input
+                class="input"
+                id="Github"
+                type="text"
+                name="Github"
+                placeholder="Ej:@sally-hill"
+              />
             </form>
           </section>
 
-        </div>
-     </div>
-    </main>
+          <section class="share">
+            <div class="sharewrapper">
+              <i class="fas fa-share-alt shareicon" aria-hidden="true"></i>
 
+              <h2 class="sharetitle">comparte</h2>
+            </div>
+            <div class="sharecontainer">
+              <i class="fas fa-chevron-down sharearrow"></i>
+              <i class="fas fa-chevron-up sharearrow hidden"></i>
+            </div>
+          </section>
+          <div class="sharecard">
+            <div>
+              <i class="fa fa-id-card-o cardicon" aria-hidden="true"></i>
+            </div>
+            <div class="btncreatecard">crear tarjeta</div>
+          </div>
+
+          <section class="cardCreated">
+            <h3 class="cardCreated-title">La tarjeta ha sido creada:</h3>
+            <a
+              class="CardCreated-a"
+              href="https://awesome-profile-card.com?id=A456DF0001"
+              target="_blank"
+            >
+              https://awesome-profile-card.com?id=A456DF0001
+            </a>
+            <div class="CardCreated_button">
+              <i class="fab fa-twitter icon"></i>
+              <p class="twShare">Compartir en twitter</p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+    
     <footer class="footer">
       <small class="footeryear"> Awesome profile-cards @2021</small>
 
