@@ -4,7 +4,6 @@
 const fillSection = document.querySelector ('.js-fill');
 const shareSection = document.querySelector ('.js-share');
 
-
 function showContent (event) {
   const arrowUp = event.target.closest ('.js-arrowUp');
   const arrowDown = event.target.closest ('.js-arrowDown');
@@ -28,60 +27,36 @@ shareSection.addEventListener ('click', showContent);*/
 const arrowUpDesign = document.querySelector ('.js-arrowUpDesign');
 const arrowDownDesign = document.querySelector ('.js-arrowDownDesign');
 const contentDesign = document.querySelector ('.js-collapsibleContainerDesign');
-
-function showContentDesign () {
-  arrowUpDesign.classList.add('hidden');
-  arrowDownDesign.classList.remove('hidden');
-  contentDesign.classList.remove('hidden');
+function collapsibleDesign () {
+  arrowUpDesign.classList.toggle('hidden');
+  arrowDownDesign.classList.toggle('hidden');
+  contentDesign.classList.toggle('hidden');
 }
-
-function hideContentDesign () {
-  arrowUpDesign.classList.remove('hidden');
-  arrowDownDesign.classList.add('hidden');
-  contentDesign.classList.add('hidden');
-}
-
-arrowUpDesign.addEventListener ('click', showContentDesign);
-arrowDownDesign.addEventListener ('click', hideContentDesign);
+arrowUpDesign.addEventListener ('click', collapsibleDesign);
+arrowDownDesign.addEventListener ('click', collapsibleDesign);
 
 
 //fill section
 const arrowUpFill = document.querySelector ('.js-arrowUpFill');
 const arrowDownFill = document.querySelector ('.js-arrowDownFill');
 const contentFill = document.querySelector ('.js-collapsibleContainerFill');
-
-function showContentFill () {
-  arrowUpFill.classList.add('hidden');
-  arrowDownFill.classList.remove('hidden');
-  contentFill.classList.remove('hidden');
+function collapsibleFill () {
+  arrowUpFill.classList.toggle('hidden');
+  arrowDownFill.classList.toggle('hidden');
+  contentFill.classList.toggle('hidden');
 }
-
-function hideContentFill () {
-  arrowUpFill.classList.remove('hidden');
-  arrowDownFill.classList.add('hidden');
-  contentFill.classList.add('hidden');
-}
-
-arrowUpFill.addEventListener ('click', showContentFill);
-arrowDownFill.addEventListener ('click', hideContentFill);
+arrowUpFill.addEventListener ('click', collapsibleFill);
+arrowDownFill.addEventListener ('click', collapsibleFill);
 
 
 //share section
 const arrowUpShare = document.querySelector ('.js-arrowUpShare');
 const arrowDownShare = document.querySelector ('.js-arrowDownShare');
 const contentShare = document.querySelector ('.js-collapsibleContainerShare');
-
-function showContentShare () {
-  arrowUpShare.classList.add('hidden');
-  arrowDownShare.classList.remove('hidden');
-  contentShare.classList.remove('hidden');
+function collapsibleShare () {
+  arrowUpShare.classList.toggle('hidden');
+  arrowDownShare.classList.toggle('hidden');
+  contentShare.classList.toggle('hidden');
 }
-
-function hideContentShare () {
-  arrowUpShare.classList.remove('hidden');
-  arrowDownShare.classList.add('hidden');
-  contentShare.classList.add('hidden');
-}
-
-arrowUpShare.addEventListener ('click', showContentShare);
-arrowDownShare.addEventListener ('click', hideContentShare);
+arrowUpShare.addEventListener ('click', collapsibleShare);
+arrowDownShare.addEventListener ('click', collapsibleShare);
