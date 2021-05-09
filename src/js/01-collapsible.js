@@ -10,7 +10,7 @@ function showContent (event) {
   const arrowUp = event.target.closest ('.js-arrowUp');
   const arrowDown = event.target.closest ('.js-arrowDown');
   const content = event.target.closest ('.js-collapsibleContainer');
-  if (arrowUp.classList ('.hidden')) {
+  if (arrowUp.classList.contains ('.hidden')) {
     arrowUp.classList.add ('.hidden');
     arrowDown.classList.remove ('.hidden');
     content.classList.remove ('.hidden');
