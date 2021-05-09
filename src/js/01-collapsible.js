@@ -1,7 +1,7 @@
 'use strict';
 
 //design section
-const designSection = document.querySelector ('.js-design');
+/*const designSection = document.querySelector ('.js-design');
 const fillSection = document.querySelector ('.js-fill');
 const shareSection = document.querySelector ('.js-share');
 
@@ -23,6 +23,6 @@ function showContent (event) {
 
 designSection.addEventListener ('click', showContent);
 fillSection.addEventListener ('click', showContent);
-shareSection.addEventListener ('click', showContent);
+shareSection.addEventListener ('click', showContent);*/
 
 
