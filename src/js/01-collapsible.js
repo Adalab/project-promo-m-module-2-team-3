@@ -1,27 +1,48 @@
 'use strict';
 
-/*const designSection = document.querySelector ('.js-design');
-const fillSection = document.querySelector ('.js-fill');
-const shareSection = document.querySelector ('.js-share');
+// const designSection = document.querySelector ('.js-design');
+// const fillSection = document.querySelector ('.js-fill');
+// const shareSection = document.querySelector ('.js-share');
 
-function showContent (event) {
-  const arrowUp = event.target.closest ('.js-arrowUp');
-  const arrowDown = event.target.closest ('.js-arrowDown');
-  const content = event.target.closest ('.js-collapsibleContainer');
-  if (arrowUp.classList.contains ('.hidden')) {
-    arrowUp.classList.add ('.hidden');
-    arrowDown.classList.remove ('.hidden');
-    content.classList.remove ('.hidden');
-  } else {
-    arrowUp.classList.remove ('.hidden');
-    arrowDown.classList.add ('.hidden');
-    content.classList.add ('.hidden');
-  }
-}
+// function showContent (event) {
+//   const arrowUp = event.target.closest ('.js-arrowUp');
+//   const arrowDown = event.target.closest ('.js-arrowDown');
+//   const content = event.target.closest ('.js-collapsibleContainer');
+//   if (arrowUp.classList.contains ('.hidden')) {
+//     arrowUp.classList.add ('.hidden');
+//     arrowDown.classList.remove ('.hidden');
+//     content.classList.remove ('.hidden');
+//   } else {
+//     arrowUp.classList.remove ('.hidden');
+//     arrowDown.classList.add ('.hidden');
+//     content.classList.add ('.hidden');
+//   }
+//   console.log('arrowUp');
+// }
 
-designSection.addEventListener ('click', showContent);
-fillSection.addEventListener ('click', showContent);
-shareSection.addEventListener ('click', showContent);*/
+// designSection.addEventListener ('click', showContent);
+// fillSection.addEventListener ('click', showContent);
+// shareSection.addEventListener ('click', showContent);
+
+// const shareSection = document.querySelector ('.js-shareTitle');
+// function titleHtmlCode (title) {
+//   let htmlCode = `<div class="design_wrapper"></div>`;
+//   htmlCode +=   `   <i class="fas fa-share-alt design_icon" aria-hidden="true"></i>`;
+//   htmlCode +=   `   <h2 class="design_title">${title}</h2>`;
+//   htmlCode +=   ` </div>`;
+//   htmlCode +=   `<div class="sharecontainer">`;
+//   htmlCode +=   `  <i class="fas fa-chevron-down design_arrow js-arrowDownShare hidden"></i>`;
+//   htmlCode +=   `   <i class="fas fa-chevron-up design_arrow js-arrowUpDesign"></i>`;
+//   htmlCode +=   `</div>`;
+//   return htmlCode;
+// }
+
+// function paintTitle () {
+//   const shareTitle = titleHtmlCode ('comparte fake');
+//   shareSection.innerHTML = shareTitle;
+// }
+// paintTitle();
+
 
 //design section
 const arrowUpDesign = document.querySelector ('.js-arrowUpDesign');

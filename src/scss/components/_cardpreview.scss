@@ -35,7 +35,9 @@
     }
     &_photo {
       height: 200px;
-      background-color: lightgray;
+      background-image: url("../images/flowers.jpg");
+      background-position: center;
+      background-size: cover;
     }
     &_media {
       padding-top: 10px;
