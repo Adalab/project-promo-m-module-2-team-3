@@ -1,7 +1,8 @@
-const inputEmail = document.querySelector ('.js-inputEmail');
+'use strict';
+const inputEmail = document.querySelector('.js-inputEmail');
 const linkEmail = document.querySelector('.js-linkMail');
 
-function handleLinksEmail (event){
+/*function handleLinksEmail (event){
     const inputEmailValue = event.currentTarget.value;
     linkEmail.href =  inputEmailValue;
 }
@@ -37,4 +38,4 @@ function handleLinksTel (event){
 }
 
 inputTel.addEventListener('change', handleLinksTel);
-
+*/

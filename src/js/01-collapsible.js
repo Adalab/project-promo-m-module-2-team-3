@@ -24,9 +24,8 @@
 // fillSection.addEventListener ('click', showContent);
 // shareSection.addEventListener ('click', showContent);
 
-
 //design section
-const arrowUpDesign = document.querySelector ('.js-arrowUpDesign');
+/*const arrowUpDesign = document.querySelector ('.js-arrowUpDesign');
 const arrowDownDesign = document.querySelector ('.js-arrowDownDesign');
 const contentDesign = document.querySelector ('.js-collapsibleContainerDesign');
 function collapsibleDesign () {
@@ -72,4 +71,4 @@ function createCard () {
   cardLink.classList.toggle ('hidden');
   creationBtn.classList.toggle ('pressedButton');
 }
-creationBtn.addEventListener ('click', createCard);
+creationBtn.addEventListener ('click', createCard);*/
