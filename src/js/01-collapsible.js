@@ -24,25 +24,6 @@
 // fillSection.addEventListener ('click', showContent);
 // shareSection.addEventListener ('click', showContent);
 
-// const shareSection = document.querySelector ('.js-shareTitle');
-// function titleHtmlCode (title) {
-//   let htmlCode = `<div class="design_wrapper"></div>`;
-//   htmlCode +=   `   <i class="fas fa-share-alt design_icon" aria-hidden="true"></i>`;
-//   htmlCode +=   `   <h2 class="design_title">${title}</h2>`;
-//   htmlCode +=   ` </div>`;
-//   htmlCode +=   `<div class="sharecontainer">`;
-//   htmlCode +=   `  <i class="fas fa-chevron-down design_arrow js-arrowDownShare hidden"></i>`;
-//   htmlCode +=   `   <i class="fas fa-chevron-up design_arrow js-arrowUpDesign"></i>`;
-//   htmlCode +=   `</div>`;
-//   return htmlCode;
-// }
-
-// function paintTitle () {
-//   const shareTitle = titleHtmlCode ('comparte fake');
-//   shareSection.innerHTML = shareTitle;
-// }
-// paintTitle();
-
 
 //design section
 const arrowUpDesign = document.querySelector ('.js-arrowUpDesign');
