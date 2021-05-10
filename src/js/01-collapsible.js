@@ -68,5 +68,6 @@ const cardLink = document.querySelector ('.js-cardCreationLink');
 const creationBtn = document.querySelector ('.sharecard');
 function createCard () {
   cardLink.classList.toggle ('hidden');
+  creationBtn.classList.toggle ('pressedButton');
 }
 creationBtn.addEventListener ('click', createCard);
