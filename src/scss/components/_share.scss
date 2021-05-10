@@ -47,6 +47,11 @@
   font-size: 18px;
   font-family: $secondFont;
   background-color: $thirdFontcolor;
+  box-shadow: $boxShadow;
+}
+
+.pressedButton {
+  background-color: #d5d5d5;
 }
 
 //SHARE - TWITTER
@@ -96,4 +101,3 @@
   width: 134px;
   height: 20px;
 }
-
