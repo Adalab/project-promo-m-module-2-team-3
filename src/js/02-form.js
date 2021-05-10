@@ -1,8 +1,12 @@
 'use strict';
 
-const inputValueName = document.querySelector('.js-inputname');
 const cardName = document.querySelector('.js-previewname');
 const form = document.querySelector('.js-form');
+const cardJob = document.querySelector('.js-previewjob');
+const cardEmail = document.querySelector('.js-inputEmail');
+const cardTel = document.querySelector('.js-inputTel');
+const cardLinkedin = document.querySelector('.js-linkIn');
+const cardGitHub = document.querySelector('.js-linkGit');
 
 function handleChangeForm(event) {
   const input = event.target;
@@ -10,7 +14,15 @@ function handleChangeForm(event) {
   if (input.name === 'fullName') {
     cardName.innerHTML = inputValue;
   } else if (input.name === 'rol') {
-    cardName.innerHTML = inputValue;
+    cardJob.innerHTML = inputValue;
+  } else if (input.name === 'emailAddress') {
+    cardEmail.innerHTML = inputValue;
+  } else if (input.name === 'telephone') {
+    cardTel.innerHTML = inputValue;
+  } else if (input.name === 'Linkedin') {
+    cardLinkedin.href += inputValue;
+  } else {
+    cardGitHub.href += inputValue;
   }
 }
 
