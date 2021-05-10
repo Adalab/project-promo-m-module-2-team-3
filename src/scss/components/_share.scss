@@ -1,37 +1,4 @@
 //SHARE - CREAR TARJETA
-.share {
-  display: flex;
-  border-top: 1px solid #d8d8d8;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sharewrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 50px;
-}
-.shareicon {
-  display: inline;
-  font-size: 18px;
-  color: $thirdFontcolor;
-  margin-right: 10px;
-}
-
-.sharetitle {
-  font-size: 18px;
-  font-family: $secondFont;
-  color: $secondFontColor;
-  text-transform: uppercase;
-}
-
-.sharearrow {
-  font-size: 18px;
-  color: #54585a;
-}
-
 .sharecard {
   display: flex;
   flex-direction: row;
@@ -49,19 +16,11 @@
   box-shadow: $boxShadow;
 }
 
-.pressedButton {
-  background-color: #d5d5d5;
-}
-
 //SHARE - TWITTER
 .cardCreated {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 136px;
   font-family: $secondFont;
+  display: none;
 }
 
 .cardCreated-title {
@@ -99,4 +58,16 @@
 .twShare {
   width: 134px;
   height: 20px;
+}
+
+.showLink {
+  .cardCreated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sharecard {
+    background-color: #d5d5d5;
+  }
 }
