@@ -1,33 +1,7 @@
-.fill {
+.contact-form {
   font-family: $secondFont;
   font-size: 14px;
   color: $mainFontColor;
-}
-
-.fill_wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.fill_arrow {
-  @include collapsableImage();
-}
-
-.fill_flex1 {
-  display: flex;
-}
-
-.icon-keyboard {
-  width: 100%;
-  margin-right: 10px;
-  font-size: 18px;
-  color: $thirdFontcolor;
-}
-
-.contact-form {
   display: flex;
   flex-direction: column;
   line-height: 20px;
