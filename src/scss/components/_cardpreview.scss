@@ -77,8 +77,13 @@
   }
 }
 
-.js-color-orangename {
-  color: #420101;
+.card.js-color-orangename {
+  .card_info--name {
+    color: #420101;
+  }
+  .js-linkTel {
+    border-color: #420101;
+  }
 }
 
 .js-color-orangeinfo {
