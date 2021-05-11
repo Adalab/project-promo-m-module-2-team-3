@@ -7,15 +7,14 @@ const button3 = document.querySelector('.js-input3')
 function changecolor (event) {
     const selectedButton = event.currentTarget;
     const card = document.querySelector('.js-card');
-    card.classList.remove('js-color-bluename');
-    card.classList.remove('js-color-orangename');
+    card.classList.remove('js-color-blue');
+    card.classList.remove('js-color-orange');
 
     if (selectedButton === button1) {
-        //card.classList.add('js-color-greenname');
     } else if (selectedButton === button2) {
-        card.classList.add('js-color-orangename');
+        card.classList.add('js-color-orange');
     } else {
-        card.classList.add('js-color-bluename');
+        card.classList.add('js-color-blue');
     }
 }
 
