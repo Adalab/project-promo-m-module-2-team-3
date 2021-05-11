@@ -22,8 +22,8 @@ function handleChangeForm(event) {
   } else if (input.name === 'Linkedin') {
     cardLinkedin.href = 'https://www.linkedin.com/in/' + inputValue;
   } else {
-    cardGitHub.href += inputValue;
+    cardGitHub.href = 'https://github.com/' + inputValue;
   }
 }
 
-form.addEventListener('change', handleChangeForm);
+form.addEventListener('keyup', handleChangeForm);
