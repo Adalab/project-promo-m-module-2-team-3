@@ -20,9 +20,9 @@ function handleChangeForm(event) {
   } else if (input.name === 'telephone') {
     cardTel.innerHTML = inputValue;
   } else if (input.name === 'Linkedin') {
-    cardLinkedin.href = inputValue;
+    cardLinkedin.href = 'https://www.linkedin.com/in/' + inputValue;
   } else {
-    cardGitHub.href = inputValue;
+    cardGitHub.href += inputValue;
   }
 }
 
