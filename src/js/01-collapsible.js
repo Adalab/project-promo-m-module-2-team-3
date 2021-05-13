@@ -1,24 +1,22 @@
-'use strict';
+"use strict";
 
-const arrowDesign = document.querySelector ('.js-arrow-design');
-const arrowFill = document.querySelector ('.js-arrow-fill');
-const arrowShare = document.querySelector ('.js-arrow-share');
+const arrows = document.querySelectorAll(".js-arrow");
+console.log(arrows);
 
 function handleCollapsibles(event) {
-  const selectedSection = event.target.closest('.js-section');
-  selectedSection.classList.toggle ('active');
+  const selectedSection = event.target.closest(".js-section");
+  selectedSection.classList.toggle("active");
 }
 
-arrowDesign.addEventListener ('click', handleCollapsibles);
-arrowFill.addEventListener ('click', handleCollapsibles);
-arrowShare.addEventListener ('click', handleCollapsibles);
-
+for (const arrow of arrows) {
+  arrow.addEventListener("click", handleCollapsibles);
+}
 
 //create card button
-const creationBtn = document.querySelector ('.sharecard');
+const creationBtn = document.querySelector(".sharecard");
 
-function handleButtonLink (event) {
-  const selectedSection = event.target.closest('.collapsible');
-  selectedSection.classList.toggle ('showLink');
+function handleButtonLink(event) {
+  const selectedSection = event.target.closest(".collapsible");
+  selectedSection.classList.toggle("showLink");
 }
-creationBtn.addEventListener ('click', handleButtonLink);
+creationBtn.addEventListener("click", handleButtonLink);

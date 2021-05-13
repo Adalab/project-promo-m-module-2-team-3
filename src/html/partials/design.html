@@ -1,11 +1,9 @@
 <section class="design active js-section">
-  <div class="title_wrapper">
-    <div class="title_wrapper--text">
-      <i class="fal fa-object-ungroup icon"></i>
-      <h2 class="title">Diseña</h2>
-    </div>
-    <i class="fas fa-chevron-up title_wrapper--arrow js-arrow-design"></i>
-  </div>
+  <include
+    src="./title.html"
+    title="comparte"
+    iconClass="fal fa-object-ungroup"
+  ></include>
 
   <div class="collapsible">
     <form class="design_form">
@@ -13,10 +11,11 @@
       <div class="design_form-box">
         <label class="design_form-label">
           <input
-            class="design_form-label--input js-input1"
+            class="design_form-label--input js-input-design"
             type="radio"
             name="palette"
             value="green"
+            checked
           />
           <div class="design_form-label--div">
             <div class="design_form-label--div1"></div>
@@ -25,9 +24,9 @@
           </div>
         </label>
 
-        <label class="design_form-label js-input2">
+        <label class="design_form-label">
           <input
-            class="design_form-label--input"
+            class="design_form-label--input js-input-design"
             type="radio"
             name="palette"
             value="orange"
@@ -40,7 +39,7 @@
         </label>
         <label class="design_form-label">
           <input
-            class="design_form-label--input js-input3"
+            class="design_form-label--input js-input-design"
             type="radio"
             name="palette"
             value="blue"
