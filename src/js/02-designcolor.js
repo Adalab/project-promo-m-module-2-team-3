@@ -1,17 +1,16 @@
-"use strict";
+'use strict';
 
-const buttons = document.querySelectorAll(".js-input-design");
-console.log(buttons);
+const buttons = document.querySelectorAll('.js-input-design');
 //const button2 = document.querySelector('.js-input2');
 //const button3 = document.querySelector('.js-input3');
 
 function changecolor() {
   //const selectedButton = event.currentTarget;
-  const selectedButton = document.querySelector(".js-input-design:checked");
+  const selectedButton = document.querySelector('.js-input-design:checked');
 
-  const card = document.querySelector(".js-card");
-  card.classList.remove("js-color-blue");
-  card.classList.remove("js-color-orange");
+  const card = document.querySelector('.js-card');
+  card.classList.remove('js-color-blue');
+  card.classList.remove('js-color-orange');
 
   /*console.log(selectedButton.value);
   if (selectedButton.value === "green") {
@@ -23,9 +22,9 @@ function changecolor() {
 
   if (selectedButton === buttons[0]) {
   } else if (selectedButton === buttons[1]) {
-    card.classList.add("js-color-orange");
+    card.classList.add('js-color-orange');
   } else if (selectedButton === buttons[2]) {
-    card.classList.add("js-color-blue");
+    card.classList.add('js-color-blue');
   }
 }
 
@@ -33,8 +32,7 @@ changecolor();
 
 for (let index = 0; index < buttons.length; index++) {
   const button = buttons[index];
-  button.addEventListener("click", changecolor);
-  console.log(button);
+  button.addEventListener('click', changecolor);
 }
 
 /*for (const button of buttons) {

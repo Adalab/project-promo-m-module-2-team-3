@@ -11,57 +11,82 @@
       action="https://formspree.io/f/mbjpqobw"
       method="POST"
     >
-      <label class="label_fill" id="fullName">Nombre completo</label>
+      <label class="label_fill" for="fullName">Nombre completo</label>
       <input
         class="input js-inputname"
         id="fullName"
         type="text"
-        name="fullName"
+        name="name"
         placeholder="Ej:Sally Jill"
       />
-      <label class="label_fill" id="rol">Puesto</label>
+      <label class="label_fill" for="rol">Puesto</label>
       <input
         class="input js-inputjobtitle"
         id="rol"
         type="text"
-        name="rol"
+        name="job"
         placeholder="Ej:Front-End unicorn"
       />
-      <label class="label_fill"> Imagen de perfil </label>
+      <!-- <label class="label_fill"> Imagen de perfil </label>
       <div class="add_image">
         <a href="" class="button_image">Añadir imagen</a>
         <div class="checkbox"></div>
+      </div> -->
+
+      <label class="label_fill"> Imagen de perfil </label>
+      <div class="add_image">
+        <div class="action">
+          <label class="action__upload-btn button_image" for="img-selector"
+            >Añadir imagen</label
+          >
+          <input
+            type="file"
+            name=""
+            id="img-selector"
+            class="action__hiddenField js__profile-upload-btn"
+          />
+        </div>
+        <div class="profile">
+          <div
+            class="profile__image js__profile-image"
+            style="
+              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+            "
+          ></div>
+          <div class="checkbox profile__preview js__profile-preview"></div>
+        </div>
       </div>
-      <label class="label_fill" id="emailAddress">Email</label>
+
+      <label class="label_fill" for="emailAddress">Email</label>
       <input
         class="input js-inputEmail"
         type="email"
         id="emailAddress"
-        name="emailAddress"
+        name="email"
         placeholder="Ej:sally-jill@gmail.com"
       />
-      <label class="label_fill" id="telephone">Telefono</label>
+      <label class="label_fill" for="telephone">Telefono</label>
       <input
         class="input js-inputTel"
         type="tel"
         id="telephone"
-        name="telephone"
+        name="phone"
         placeholder="Ej:555-55-55-55"
       />
-      <label class="label_fill" id="Linkedin">Linkedin </label>
+      <label class="label_fill" for="Linkedin">Linkedin </label>
       <input
         class="input js-inputIn"
         id="Linkedin"
         type="text"
-        name="Linkedin"
+        name="linkedin"
         placeholder="Ej: sally.hill"
       />
-      <label class="label_fill" id="Github"> Github</label>
+      <label class="label_fill" for="Github"> Github</label>
       <input
         class="input js-inputGit"
         id="Github"
         type="text"
-        name="Github"
+        name="github"
         placeholder="Ej: sally-hill"
       />
     </form>

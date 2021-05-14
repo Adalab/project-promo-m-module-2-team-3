@@ -51,6 +51,7 @@ input::placeholder {
   justify-content: center;
   border-radius: 3px;
   box-shadow: $boxShadow;
+  cursor: pointer;
 }
 
 .checkbox {
@@ -58,4 +59,20 @@ input::placeholder {
   border: solid 2px $detailColor;
   width: 30px;
   height: 30px;
+}
+
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+    darle los estilos que queremos */
+  display: none;
+}
+
+.profile__image,
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profile__image {
+  display: none;
 }
