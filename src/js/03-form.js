@@ -45,3 +45,6 @@ function handleChangeForm(event) {
 }
 
 form.addEventListener('change', handleChangeForm);
+
+//RESET BUTTON
+const resetButton = document.querySelector('.js-reset-button');
