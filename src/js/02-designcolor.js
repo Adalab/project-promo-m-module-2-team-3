@@ -1,6 +1,5 @@
 'use strict';
 
-const buttons = document.querySelectorAll('.js-input-design');
 //const button2 = document.querySelector('.js-input2');
 //const button3 = document.querySelector('.js-input3');
 

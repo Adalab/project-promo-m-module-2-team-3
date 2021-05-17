@@ -1,13 +1,5 @@
 'use strict';
 
-const cardName = document.querySelector('.js-previewname');
-const form = document.querySelector('.js-form');
-const cardJob = document.querySelector('.js-previewjob');
-const cardEmail = document.querySelector('.js-linkEmail');
-const cardTel = document.querySelector('.js-linkTel');
-const cardLinkedin = document.querySelector('.js-linkIn');
-const cardGitHub = document.querySelector('.js-linkGit');
-
 const userData = {
   name: '',
   job: '',
@@ -15,6 +7,8 @@ const userData = {
   linkedin: '',
   phone: '',
   gitHub: '',
+  palette: 1,
+  photo: '',
 };
 
 function handleChangeForm(event) {
@@ -22,11 +16,24 @@ function handleChangeForm(event) {
   const inputName = event.target.name;
 
   userData[inputName] = inputValue;
+  paintFormInCard();
+}
 
-  cardName.innerHTML = userData.name;
-  cardJob.innerHTML = userData.job;
-  cardEmail.href = userData.email;
-  cardTel.href = userData.phone;
+function paintFormInCard() {
+  if (userData.name === '') {
+    cardName.innerHTML = 'Nombre Apellidos';
+  } else {
+    cardName.innerHTML = userData.name;
+  }
+
+  if (userData.job === '') {
+    cardJob.innerHTML = 'Front end developer';
+  } else {
+    cardJob.innerHTML = userData.job;
+  }
+
+  cardEmail.href = 'mailto:' + userData.email;
+  cardTel.href = 'tel:' + userData.phone;
   cardLinkedin.href = `https://linkedin.com/in/${userData.linkedin}`;
   cardGitHub.href = `https://github.com/${userData.gitHub}`;
   // if (input.name === 'fullName') {
@@ -47,4 +54,22 @@ function handleChangeForm(event) {
 form.addEventListener('change', handleChangeForm);
 
 //RESET BUTTON
-const resetButton = document.querySelector('.js-reset-button');
+function handleResetButton() {
+  form.reset();
+  userData.name = '';
+  userData.job = '';
+  userData.email = '';
+  userData.linkedin = '';
+  userData.phone = '';
+  userData.gitHub = '';
+  userData.palette = 1;
+  userData.photo = '';
+
+  console.log(userData);
+  paintFormInCard();
+  paintPhotoInCard();
+  //console.log(buttons[0]);
+  buttons[0].checked = true;
+  changecolor();
+}
+resetButton.addEventListener('click', handleResetButton);
