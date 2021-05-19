@@ -6,7 +6,7 @@ const userData = {
   email: '',
   linkedin: '',
   phone: '',
-  gitHub: '',
+  github: '',
   palette: 1,
   photo: '',
 };
@@ -61,7 +61,7 @@ function handleResetButton() {
   userData.email = '';
   userData.linkedin = '';
   userData.phone = '';
-  userData.gitHub = '';
+  userData.github = '';
   userData.palette = 1;
   userData.photo = '';
 

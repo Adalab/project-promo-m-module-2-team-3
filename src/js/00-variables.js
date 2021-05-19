@@ -2,7 +2,7 @@
 
 //collapsibles
 const arrows = document.querySelectorAll('.js-arrow');
-const creationBtn = document.querySelector('.sharecard');
+const creationBtn = document.querySelector('.js-buttoncreate');
 const collapsibleSections = document.querySelectorAll('.js-section');
 
 //design

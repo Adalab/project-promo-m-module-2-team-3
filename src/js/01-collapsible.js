@@ -37,10 +37,3 @@ function handleCollapsibles(event) {
 for (const arrow of arrows) {
   arrow.addEventListener('click', handleCollapsibles);
 }
-
-//create card button
-function handleButtonLink(event) {
-  const selectedSection = event.target.closest('.collapsible');
-  selectedSection.classList.toggle('showLink');
-}
-creationBtn.addEventListener('click', handleButtonLink);
