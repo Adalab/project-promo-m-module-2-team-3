@@ -36,7 +36,6 @@ function handleButtonClickCreate(event) {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         if (data.success === false) {
           createMessageError('todos los campos');
         } else {
