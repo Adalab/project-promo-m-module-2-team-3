@@ -29,7 +29,9 @@ function handleButtonClickCreate(event) {
   } else {
     fetch('https://awesome-profile-cards.herokuapp.com/card', {
       method: 'POST',
-      mode: 'cors',
+      headers: {
+        'content-type': 'application/json',
+      },
       body: JSON.stringify(userData),
     })
       .then((response) => response.json())
@@ -39,9 +41,11 @@ function handleButtonClickCreate(event) {
           createMessageError('todos los campos');
         } else {
           const selectedSection = event.target.closest('.collapsible');
-          const linkCard = document.querySelector('.js-link-card');
+          let linkCard = document.querySelector('.js-link-card');
+          let twitterLink = document.querySelector('.js-twitter-link');
           selectedSection.classList.toggle('showLink');
-          //habria que cambiar el innerHTML de link card con el link que nos devuelva el servidor
+          linkCard.innerHTML = data.cardURL;
+          twitterLink.href = `http://twitter.com/home/?status=${data.cardURL}`;
         }
       })
       .catch(() => {

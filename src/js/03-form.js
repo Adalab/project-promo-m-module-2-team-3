@@ -1,22 +1,12 @@
 'use strict';
 
-const userData = {
-  name: '',
-  job: '',
-  email: '',
-  linkedin: '',
-  phone: '',
-  github: '',
-  palette: 1,
-  photo: '',
-};
-
 function handleChangeForm(event) {
   const inputValue = event.target.value;
   const inputName = event.target.name;
 
   userData[inputName] = inputValue;
   paintFormInCard();
+  localStorage.setItem('user', JSON.stringify(userData));
 }
 
 function paintFormInCard() {
@@ -57,5 +47,7 @@ function handleResetButton() {
   paintPhotoInCard();
   buttons[0].checked = true;
   changecolor();
+
+  localStorage.clear();
 }
 resetButton.addEventListener('click', handleResetButton);
