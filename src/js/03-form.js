@@ -17,6 +17,7 @@ function handleChangeForm(event) {
 
   userData[inputName] = inputValue;
   paintFormInCard();
+  localStorage.setItem('user', JSON.stringify(userData));
 }
 
 function paintFormInCard() {
