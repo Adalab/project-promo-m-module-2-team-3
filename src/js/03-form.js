@@ -33,6 +33,7 @@ form.addEventListener('change', handleChangeForm);
 //RESET BUTTON
 function handleResetButton() {
   form.reset();
+
   userData.name = '';
   userData.job = '';
   userData.email = '';
@@ -46,9 +47,8 @@ function handleResetButton() {
   paintPhotoInCard();
 
   buttons[0].checked = true;
-
   changecolor();
 
-  localStorage.clear();
+  //localStorage.clear();
 }
 resetButton.addEventListener('click', handleResetButton);
