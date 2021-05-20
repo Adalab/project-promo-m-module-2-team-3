@@ -34,6 +34,7 @@ function handleButtonClickCreate(event) {
     })
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         if (data.success === false) {
           createMessageError('todos los campos');
         } else {
@@ -43,7 +44,9 @@ function handleButtonClickCreate(event) {
           //habria que cambiar el innerHTML de link card con el link que nos devuelva el servidor
         }
       })
-      .catch((err) => console.log('error', err));
+      .catch(() => {
+        createMessageError('el formulario más tarde!');
+      });
   }
 }
 
