@@ -42,10 +42,11 @@ function handleResetButton() {
   userData.palette = 1;
   userData.photo = '';
 
-  console.log(userData);
   paintFormInCard();
   paintPhotoInCard();
+
   buttons[0].checked = true;
+
   changecolor();
 
   localStorage.clear();
