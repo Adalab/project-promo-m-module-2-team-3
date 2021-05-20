@@ -21,21 +21,21 @@
       margin-bottom: 10px;
       border-left: $borderCardColor 5px solid;
       &--name {
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 18px;
         padding-bottom: 4px;
         color: $mainFontColor;
       }
       &--job {
-        font-family: "Montserrat", sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         color: $secondFontColor;
       }
     }
     &_photo {
       height: 200px;
-      background-image: url("../images/flowers.jpg");
+      background-image: url('../images/flowers.jpg');
       background-position: center;
       background-size: cover;
     }
@@ -86,6 +86,7 @@
   }
   .card_media--item {
     border-color: #e95626;
+    color: #420101;
   }
 }
 
@@ -98,5 +99,6 @@
   }
   .card_media--item {
     border-color: #a0c0cf;
+    color: #3e5b65;
   }
 }
