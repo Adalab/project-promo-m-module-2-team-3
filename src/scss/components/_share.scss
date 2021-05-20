@@ -17,6 +17,7 @@
   font-family: $secondFont;
   background-color: $thirdFontcolor;
   box-shadow: $boxShadow;
+  cursor: pointer;
 }
 
 //SHARE - TWITTER
@@ -24,17 +25,23 @@
   width: 100%;
   font-family: $secondFont;
   display: none;
+  border-top: $mainBorder;
+  border-bottom: $mainBorder;
+  margin: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .cardCreated-title {
   color: $secondFontColor;
   font-size: 18px;
-  margin-top: 20px;
   margin-bottom: 5px;
 }
 .CardCreated-a {
+  font-family: $secondFont;
   color: $thirdFontcolor;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -71,7 +78,7 @@
     align-items: center;
   }
   .sharecard {
-    background-color: #d5d5d5;
+    display: hidden;
   }
 }
 

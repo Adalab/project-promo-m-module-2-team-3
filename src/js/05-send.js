@@ -2,10 +2,13 @@
 
 function createMessageError(text) {
   creationBtn.classList.add('errorButtonPress');
+
   const errorMessage = document.createElement('p');
   const errorContainer = document.querySelector('.js-errorcontainer');
-  errorContainer.appendChild(errorMessage);
   const errorMessageText = document.createTextNode(`Debes rellenar ${text}`);
+
+  errorContainer.innerHTML = '';
+  errorContainer.appendChild(errorMessage);
   errorMessage.appendChild(errorMessageText);
   errorMessage.setAttribute('class', 'CardCreated-a');
 }
@@ -35,9 +38,12 @@ function handleButtonClickCreate(event) {
           createMessageError('todos los campos');
         } else {
           const selectedSection = event.target.closest('.collapsible');
+          const linkCard = document.querySelector('.js-link-card');
           selectedSection.classList.toggle('showLink');
+          //habria que cambiar el innerHTML de link card con el link que nos devuelva el servidor
         }
-      });
+      })
+      .catch((err) => console.log('error', err));
   }
 }
 
