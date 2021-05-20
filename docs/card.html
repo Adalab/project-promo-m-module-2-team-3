@@ -48,7 +48,7 @@
         <div class="main_card--preview">
           <section class="card_background">
             <div class="card_button_container">
-              <a href="#" class="card_button" title="reset-button">
+              <a href="#" class="card_button js-reset-button" title="reset-button">
                 <i class="far fa-trash-alt" aria-hidden="true"></i>Reset
               </a>
             </div>
@@ -57,7 +57,7 @@
                 <h2 class="card_info--name js-previewname">Nombre Apellido</h2>
                 <h3 class="card_info--job js-previewjob">Front-end developer</h3>
               </section>
-              <section class="card_photo"></section>
+              <section class="card_photo js__profile-image"></section>
               <ul class="card_media">
                 <li>
                   <a class="js-linkTel" href="" target="_blank" title="phone-icon"
@@ -65,7 +65,7 @@
                   ></a>
                 </li>
                 <li>
-                  <a class="js-linkMail" href="" target="_blank" title="mail-icon"
+                  <a class="js-linkEmail" href="" target="_blank" title="mail-icon"
                     ><i class="fa fa-envelope card_media--item" aria-hidden="true"></i
                   ></a>
                 </li>
@@ -84,16 +84,17 @@
           </section>
 
         </div>
-        
+
         <div class="main_card--fill">
           <section class="design active js-section">
             <div class="title_wrapper">
               <div class="title_wrapper--text">
                 <i class="fal fa-object-ungroup icon"></i>
-                <h2 class="title">Diseña</h2>
+                <h2 class="title">comparte</h2>
               </div>
-              <i class="fas fa-chevron-up title_wrapper--arrow js-arrow-design"></i>
+              <i class="fas fa-chevron-up title_wrapper--arrow js-arrow"></i>
             </div>
+
 
             <div class="collapsible">
               <form class="design_form">
@@ -101,10 +102,11 @@
                 <div class="design_form-box">
                   <label class="design_form-label">
                     <input
-                      class="design_form-label--input js-input1"
+                      class="design_form-label--input js-input-design"
                       type="radio"
                       name="palette"
                       value="green"
+                      checked
                     />
                     <div class="design_form-label--div">
                       <div class="design_form-label--div1"></div>
@@ -113,9 +115,9 @@
                     </div>
                   </label>
 
-                  <label class="design_form-label js-input2">
+                  <label class="design_form-label">
                     <input
-                      class="design_form-label--input"
+                      class="design_form-label--input js-input-design"
                       type="radio"
                       name="palette"
                       value="orange"
@@ -128,7 +130,7 @@
                   </label>
                   <label class="design_form-label">
                     <input
-                      class="design_form-label--input js-input3"
+                      class="design_form-label--input js-input-design"
                       type="radio"
                       name="palette"
                       value="blue"
@@ -148,10 +150,11 @@
             <div class="title_wrapper">
               <div class="title_wrapper--text">
                 <i class="far fa-keyboard icon"></i>
-                <h2 class="title">Rellena</h2>
+                <h2 class="title">rellena</h2>
               </div>
-              <i class="fas fa-chevron-up title_wrapper--arrow js-arrow-fill"></i>
+              <i class="fas fa-chevron-up title_wrapper--arrow js-arrow"></i>
             </div>
+
 
             <div class="collapsible">
               <form
@@ -159,57 +162,82 @@
                 action="https://formspree.io/f/mbjpqobw"
                 method="POST"
               >
-                <label class="label_fill" id="fullName">Nombre completo</label>
+                <label class="label_fill" for="fullName">Nombre completo</label>
                 <input
                   class="input js-inputname"
                   id="fullName"
                   type="text"
-                  name="fullName"
+                  name="name"
                   placeholder="Ej:Sally Jill"
                 />
-                <label class="label_fill" id="rol">Puesto</label>
+                <label class="label_fill" for="rol">Puesto</label>
                 <input
                   class="input js-inputjobtitle"
                   id="rol"
                   type="text"
-                  name="rol"
+                  name="job"
                   placeholder="Ej:Front-End unicorn"
                 />
-                <label class="label_fill"> Imagen de perfil </label>
+                <!-- <label class="label_fill"> Imagen de perfil </label>
                 <div class="add_image">
                   <a href="" class="button_image">Añadir imagen</a>
                   <div class="checkbox"></div>
+                </div> -->
+
+                <label class="label_fill"> Imagen de perfil </label>
+                <div class="add_image">
+                  <div class="action">
+                    <label class="action__upload-btn button_image" for="img-selector"
+                      >Añadir imagen</label
+                    >
+                    <input
+                      type="file"
+                      name=""
+                      id="img-selector"
+                      class="action__hiddenField js__profile-upload-btn"
+                    />
+                  </div>
+                  <div class="profile">
+                    <div
+                      class="profile__image js__profile-image"
+                      style="
+                        background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+                      "
+                    ></div>
+                    <div class="checkbox profile__preview js__profile-preview"></div>
+                  </div>
                 </div>
-                <label class="label_fill" id="emailAddress">Email</label>
+
+                <label class="label_fill" for="emailAddress">Email</label>
                 <input
                   class="input js-inputEmail"
                   type="email"
                   id="emailAddress"
-                  name="emailAddress"
+                  name="email"
                   placeholder="Ej:sally-jill@gmail.com"
                 />
-                <label class="label_fill" id="telephone">Telefono</label>
+                <label class="label_fill" for="telephone">Telefono</label>
                 <input
                   class="input js-inputTel"
                   type="tel"
                   id="telephone"
-                  name="telephone"
+                  name="phone"
                   placeholder="Ej:555-55-55-55"
                 />
-                <label class="label_fill" id="Linkedin">Linkedin </label>
+                <label class="label_fill" for="Linkedin">Linkedin </label>
                 <input
                   class="input js-inputIn"
                   id="Linkedin"
                   type="text"
-                  name="Linkedin"
+                  name="linkedin"
                   placeholder="Ej: sally.hill"
                 />
-                <label class="label_fill" id="Github"> Github</label>
+                <label class="label_fill" for="Github"> Github</label>
                 <input
                   class="input js-inputGit"
                   id="Github"
                   type="text"
-                  name="Github"
+                  name="github"
                   placeholder="Ej: sally-hill"
                 />
               </form>
@@ -220,18 +248,19 @@
             <div class="title_wrapper">
               <div class="title_wrapper--text">
                 <i class="fas fa-share-alt icon"></i>
-                <h2 class="title">Comparte</h2>
+                <h2 class="title">comparte</h2>
               </div>
-              <i class="fas fa-chevron-up title_wrapper--arrow js-arrow-share"></i>
+              <i class="fas fa-chevron-up title_wrapper--arrow js-arrow"></i>
             </div>
 
+
             <div class="collapsible">
-              <div class="sharecard">
-                <div>
-                  <i class="far fa-address-card cardicon" aria-hidden="true"></i>
-                </div>
+              <div class="sharecard js-buttoncreate">
+                <i class="far fa-address-card cardicon" aria-hidden="true"></i>
                 <div class="btncreatecard">crear tarjeta</div>
               </div>
+
+              <div class="js-errorcontainer"></div>
 
               <section class="cardCreated">
                 <h3 class="cardCreated-title">La tarjeta ha sido creada:</h3>
@@ -253,7 +282,7 @@
         </div>
       </div>
     </main>
-    
+
     <footer class="footer">
       <small class="footeryear"> Awesome profile-cards @2021</small>
 
