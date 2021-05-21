@@ -19,3 +19,7 @@ function getData() {
   }
 }
 getData();
+
+function setData() {
+  localStorage.setItem('user', JSON.stringify(userData));
+}
