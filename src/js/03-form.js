@@ -49,6 +49,6 @@ function handleResetButton() {
   buttons[0].checked = true;
   changecolor();
 
-  //localStorage.clear();
+  localStorage.clear();
 }
 resetButton.addEventListener('click', handleResetButton);

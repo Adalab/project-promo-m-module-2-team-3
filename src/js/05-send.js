@@ -44,7 +44,8 @@ function handleButtonClickCreate(event) {
           let twitterLink = document.querySelector('.js-twitter-link');
           selectedSection.classList.toggle('showLink');
           linkCard.innerHTML = data.cardURL;
-          twitterLink.href = `http://twitter.com/home/?status=${data.cardURL}`;
+          linkCard.href = data.cardURL;
+          twitterLink.href = `https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&url=${data.cardURL}`;
         }
       })
       .catch(() => {
