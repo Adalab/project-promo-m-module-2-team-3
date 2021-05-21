@@ -5,7 +5,7 @@ function handleChangeForm(event) {
 
   userData[inputName] = inputValue;
   paintFormInCard();
-  setData();
+  localStorage.setItem('user', JSON.stringify(userData));
 }
 
 function paintFormInCard() {
@@ -25,19 +25,6 @@ function paintFormInCard() {
   cardTel.href = 'tel:' + userData.phone;
   cardLinkedin.href = `https://linkedin.com/in/${userData.linkedin}`;
   cardGitHub.href = `https://github.com/${userData.gitHub}`;
-  // if (input.name === 'fullName') {
-  //   cardName.innerHTML = inputValue;
-  // } else if (input.name === 'rol') {
-  //   cardJob.innerHTML = inputValue;
-  // } else if (input.name === 'emailAddress') {
-  //   cardEmail.innerHTML = inputValue;
-  // } else if (input.name === 'telephone') {
-  //   cardTel.innerHTML = inputValue;
-  // } else if (input.name === 'Linkedin') {
-  //   cardLinkedin.href = event.target;
-  // } else {
-  //   cardGitHub.href = 'https://github.com/' + inputValue;
-  // }
 }
 
 form.addEventListener('change', handleChangeForm);
@@ -54,10 +41,9 @@ function handleResetButton() {
   userData.palette = 1;
   userData.photo = '';
 
-  console.log(userData);
   paintFormInCard();
   paintPhotoInCard();
-  //console.log(buttons[0]);
+
   buttons[0].checked = true;
   changecolor();
 

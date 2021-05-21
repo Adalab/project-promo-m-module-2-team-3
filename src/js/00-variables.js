@@ -21,6 +21,14 @@ const userData = {
   photo: '',
 };
 
+const inputName = document.querySelector('.js-inputname');
+const inputJob = document.querySelector('.js-inputjobtitle');
+const inputEmail = document.querySelector('.js-inputEmail');
+const inputTel = document.querySelector('.js-inputTel');
+const inputIn = document.querySelector('.js-inputIn');
+const inputGit = document.querySelector('.js-inputGit');
+const inputPhoto = document.querySelector('.js__profile-upload-btn');
+
 const cardName = document.querySelector('.js-previewname');
 const form = document.querySelector('.js-form');
 const cardJob = document.querySelector('.js-previewjob');
