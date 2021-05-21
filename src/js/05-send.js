@@ -35,7 +35,11 @@ function handleButtonClickCreate(event) {
           createMessageError('todos los campos');
         } else {
           const selectedSection = event.target.closest('.collapsible');
+          let linkCard = document.querySelector('.js-link-card');
+          let twitterLink = document.querySelector('.js-twitter-link');
           selectedSection.classList.toggle('showLink');
+          linkCard.innerHTML = data.cardURL;
+          twitterLink.href = `https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&url=${data.cardURL}`;
         }
       });
   }
