@@ -19,12 +19,15 @@ function changecolor() {
     card.classList.add("js-color-blue");
   }*/
 
-  if (selectedButton === buttons[0]) {
-  } else if (selectedButton === buttons[1]) {
+  if (selectedButton.value === '1') {
+  } else if (selectedButton.value === '2') {
     card.classList.add('js-color-orange');
-  } else if (selectedButton === buttons[2]) {
+  } else if (selectedButton.value === '3') {
     card.classList.add('js-color-blue');
   }
+
+  userData.palette = parseInt(selectedButton.value);
+  console.log(userData);
 }
 
 changecolor();

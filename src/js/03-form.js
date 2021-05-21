@@ -1,16 +1,4 @@
 'use strict';
-
-const userData = {
-  name: '',
-  job: '',
-  email: '',
-  linkedin: '',
-  phone: '',
-  github: '',
-  palette: 1,
-  photo: '',
-};
-
 function handleChangeForm(event) {
   const inputValue = event.target.value;
   const inputName = event.target.name;
@@ -72,5 +60,7 @@ function handleResetButton() {
   //console.log(buttons[0]);
   buttons[0].checked = true;
   changecolor();
+
+  localStorage.clear();
 }
 resetButton.addEventListener('click', handleResetButton);

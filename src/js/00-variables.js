@@ -9,6 +9,18 @@ const collapsibleSections = document.querySelectorAll('.js-section');
 const buttons = document.querySelectorAll('.js-input-design');
 
 //form
+
+const userData = {
+  name: '',
+  job: '',
+  email: '',
+  linkedin: '',
+  phone: '',
+  github: '',
+  palette: 1,
+  photo: '',
+};
+
 const cardName = document.querySelector('.js-previewname');
 const form = document.querySelector('.js-form');
 const cardJob = document.querySelector('.js-previewjob');
