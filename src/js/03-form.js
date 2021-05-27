@@ -42,12 +42,12 @@ function handleResetButton() {
   userData.palette = 1;
   userData.photo = '';
 
-  paintFormInCard();
-  paintPhotoInCard();
+  localStorage.clear();
 
   buttons[0].checked = true;
-  changecolor();
 
-  localStorage.clear();
+  paintFormInCard();
+  paintPhotoInCard();
+  changecolor();
 }
 resetButton.addEventListener('click', handleResetButton);

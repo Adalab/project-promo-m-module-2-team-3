@@ -2,8 +2,8 @@
 function changecolor() {
   const selectedButton = document.querySelector('.js-input-design:checked');
   const card = document.querySelector('.js-card');
-  card.classList.remove('js-color-blue');
-  card.classList.remove('js-color-orange');
+  card.classList.remove('js-color-2');
+  card.classList.remove('js-color-3');
 
   if (selectedButton.value === '1') {
   } else if (selectedButton.value === '2') {
@@ -14,8 +14,6 @@ function changecolor() {
 
   userData.palette = parseInt(selectedButton.value);
 }
-
-changecolor();
 
 for (let index = 0; index < buttons.length; index++) {
   const button = buttons[index];
