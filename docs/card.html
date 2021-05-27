@@ -33,12 +33,14 @@
     <header class="header">
       <h1 class="title">Awesome profile cards</h1>
       <div class="imagecontainer">
-        <img
-          class="logo"
-          src="./assets/images/logo-awesome-profile-cards.svg"
-          alt="Logo"
-          title="Awesome profile cards"
-        />
+        <a href="./index.html">
+          <img
+            class="logo"
+            src="./assets/images/logo-awesome-profile-cards.svg"
+            alt="Logo"
+            title="Awesome profile cards"
+          />
+        </a>
       </div>
     </header>
 
@@ -169,6 +171,8 @@
                   type="text"
                   name="name"
                   placeholder="Ej:Sally Jill"
+                  maxlength="18"
+                  required
                 />
                 <label class="label_fill" for="rol">Puesto</label>
                 <input
@@ -177,13 +181,9 @@
                   type="text"
                   name="job"
                   placeholder="Ej:Front-End unicorn"
+                  maxlength="20"
+                  required
                 />
-                <!-- <label class="label_fill"> Imagen de perfil </label>
-                <div class="add_image">
-                  <a href="" class="button_image">Añadir imagen</a>
-                  <div class="checkbox"></div>
-                </div> -->
-
                 <label class="label_fill"> Imagen de perfil </label>
                 <div class="add_image">
                   <div class="action">
@@ -195,6 +195,7 @@
                       name="photo"
                       id="img-selector"
                       class="action__hiddenField js__profile-upload-btn"
+                      required
                     />
                   </div>
                   <div class="profile">
@@ -215,6 +216,7 @@
                   id="emailAddress"
                   name="email"
                   placeholder="Ej:sally-jill@gmail.com"
+                  required
                 />
                 <label class="label_fill" for="telephone">Telefono</label>
                 <input
@@ -223,6 +225,7 @@
                   id="telephone"
                   name="phone"
                   placeholder="Ej:555-55-55-55"
+                  pattern=".{9}"
                 />
                 <label class="label_fill" for="Linkedin">Linkedin </label>
                 <input
@@ -231,6 +234,7 @@
                   type="text"
                   name="linkedin"
                   placeholder="Ej: sally.hill"
+                  required
                 />
                 <label class="label_fill" for="Github"> Github</label>
                 <input
@@ -239,6 +243,7 @@
                   type="text"
                   name="github"
                   placeholder="Ej: sally-hill"
+                  required
                 />
               </form>
             </div>
