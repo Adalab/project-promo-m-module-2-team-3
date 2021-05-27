@@ -40,6 +40,8 @@ function handleButtonClickCreate(event) {
           createMessageError('todos los campos');
         } else {
           const selectedSection = event.target.closest('.collapsible');
+          const buttonCreate = document.querySelector('.js-buttoncreate');
+          buttonCreate.classList.add('.errorButtonPress');
           let linkCard = document.querySelector('.js-link-card');
           let twitterLink = document.querySelector('.js-twitter-link');
           selectedSection.classList.toggle('showLink');
