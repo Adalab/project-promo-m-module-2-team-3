@@ -9,7 +9,7 @@ function getData() {
     inputTel.value = user.phone;
     inputIn.value = user.linkedin;
     inputGit.value = user.github;
-    //inputPhoto.value = user.photo;
+    inputPhoto.src = user.photo;
 
     userData.name = user.name;
     userData.job = user.job;
