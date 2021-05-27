@@ -4,7 +4,7 @@ function getData() {
 
   if (user !== null) {
     for (const button of buttons) {
-      if (button.value === user.palette) {
+      if (parseInt(button.value) === user.palette) {
         button.checked = true;
       }
       const card = document.querySelector('.js-card');
@@ -12,7 +12,7 @@ function getData() {
       card.classList.remove('js-color-2');
 
       card.classList.add(`js-color-${user.palette}`);
-      changeColor();
+      changecolor();
     }
     inputName.value = user.name;
     inputJob.value = user.job;
@@ -24,8 +24,8 @@ function getData() {
     userData.name = user.name;
     userData.job = user.job;
     userData.email = user.email;
-    userData.linkedin = user.phone;
-    userData.phone = user.linkedin;
+    userData.linkedin = user.linkedin;
+    userData.phone = user.phone;
     userData.github = user.github;
     userData.photo = user.photo;
 

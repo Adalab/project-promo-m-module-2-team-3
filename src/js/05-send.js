@@ -37,11 +37,11 @@ function handleButtonClickCreate(event) {
       .then((response) => response.json())
       .then((data) => {
         if (data.success === false) {
-          createMessageError('todos los campos');
+          createMessageError('la imagen');
         } else {
           const selectedSection = event.target.closest('.collapsible');
           const buttonCreate = document.querySelector('.js-buttoncreate');
-          buttonCreate.classList.add('.errorButtonPress');
+          buttonCreate.classList.add('errorButtonPress');
           let linkCard = document.querySelector('.js-link-card');
           let twitterLink = document.querySelector('.js-twitter-link');
           selectedSection.classList.toggle('showLink');

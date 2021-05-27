@@ -24,7 +24,7 @@ function paintFormInCard() {
   cardEmail.href = 'mailto:' + userData.email;
   cardTel.href = 'tel:' + userData.phone;
   cardLinkedin.href = `https://linkedin.com/in/${userData.linkedin}`;
-  cardGitHub.href = `https://github.com/${userData.gitHub}`;
+  cardGitHub.href = `https://github.com/${userData.github}`;
 }
 
 form.addEventListener('change', handleChangeForm);
