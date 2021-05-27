@@ -7,13 +7,12 @@ function changecolor() {
 
   if (selectedButton.value === '1') {
   } else if (selectedButton.value === '2') {
-    card.classList.add('js-color-orange');
+    card.classList.add('js-color-2');
   } else if (selectedButton.value === '3') {
-    card.classList.add('js-color-blue');
+    card.classList.add('js-color-3');
   }
 
   userData.palette = parseInt(selectedButton.value);
-  localStorage.setItem('palettes', JSON.stringify(userData.palette));
 }
 
 changecolor();

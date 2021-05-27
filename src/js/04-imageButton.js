@@ -35,8 +35,8 @@ function writeImage() {
 
 function paintPhotoInCard() {
   if (userData.photo === '') {
-    profileImage.style.backgroundImage = ``;
-    profilePreview.style.backgroundImage = ``;
+    profileImage.style.backgroundImage = `url(../assets/images/flowers.jpg)`;
+    profilePreview.style.backgroundImage = `url(../assets/images/flowers.jpg)`;
   } else {
     profileImage.style.backgroundImage = `url(${userData.photo})`;
     profilePreview.style.backgroundImage = `url(${userData.photo})`;
