@@ -3,7 +3,6 @@
 function handleCollapsibles(event) {
   let selectedSection = event.target.closest('.js-section');
   for (const collapsibleSection of collapsibleSections) {
-    console.log(collapsibleSection);
     if (selectedSection === collapsibleSection) {
       collapsibleSection.classList.toggle('active');
     } else {

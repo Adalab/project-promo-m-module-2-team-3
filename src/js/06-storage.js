@@ -32,5 +32,4 @@ function getData() {
     paintPhotoInCard();
   }
 }
-
 getData();

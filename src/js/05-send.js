@@ -2,10 +2,13 @@
 
 function createMessageError(text) {
   creationBtn.classList.add('errorButtonPress');
+
   const errorMessage = document.createElement('p');
   const errorContainer = document.querySelector('.js-errorcontainer');
-  errorContainer.appendChild(errorMessage);
   const errorMessageText = document.createTextNode(`Debes rellenar ${text}`);
+
+  errorContainer.innerHTML = '';
+  errorContainer.appendChild(errorMessage);
   errorMessage.appendChild(errorMessageText);
   errorMessage.setAttribute('class', 'CardCreated-a');
 }
@@ -26,7 +29,9 @@ function handleButtonClickCreate(event) {
   } else {
     fetch('https://awesome-profile-cards.herokuapp.com/card', {
       method: 'POST',
-      mode: 'cors',
+      headers: {
+        'content-type': 'application/json',
+      },
       body: JSON.stringify(userData),
     })
       .then((response) => response.json())
@@ -42,6 +47,9 @@ function handleButtonClickCreate(event) {
           linkCard.href = data.cardURL;
           twitterLink.href = `https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&url=${data.cardURL}`;
         }
+      })
+      .catch(() => {
+        createMessageError('el formulario más tarde!');
       });
   }
 }

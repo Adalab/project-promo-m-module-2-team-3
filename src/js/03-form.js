@@ -32,6 +32,7 @@ form.addEventListener('change', handleChangeForm);
 //RESET BUTTON
 function handleResetButton() {
   form.reset();
+
   userData.name = '';
   userData.job = '';
   userData.email = '';
