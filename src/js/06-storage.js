@@ -12,6 +12,7 @@ function getData() {
       card.classList.remove('js-color-2');
 
       card.classList.add(`js-color-${user.palette}`);
+      changeColor();
     }
     inputName.value = user.name;
     inputJob.value = user.job;
