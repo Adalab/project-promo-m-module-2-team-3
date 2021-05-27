@@ -13,6 +13,7 @@ function changecolor() {
   }
 
   userData.palette = parseInt(selectedButton.value);
+  localStorage.setItem('user', JSON.stringify(userData));
 }
 
 for (let index = 0; index < buttons.length; index++) {

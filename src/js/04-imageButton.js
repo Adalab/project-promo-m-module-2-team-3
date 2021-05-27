@@ -31,6 +31,7 @@ function writeImage() {
    */
   userData.photo = fr.result;
   paintPhotoInCard();
+  localStorage.setItem('user', JSON.stringify(userData));
 }
 
 function paintPhotoInCard() {

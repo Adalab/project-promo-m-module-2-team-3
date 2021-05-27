@@ -2,10 +2,13 @@
 function handleChangeForm(event) {
   const inputValue = event.target.value;
   const inputName = event.target.name;
+  const inputType = event.target.type;
 
-  userData[inputName] = inputValue;
-  paintFormInCard();
-  localStorage.setItem('user', JSON.stringify(userData));
+  if (inputType !== 'file') {
+    userData[inputName] = inputValue;
+    paintFormInCard();
+    localStorage.setItem('user', JSON.stringify(userData));
+  }
 }
 
 function paintFormInCard() {
